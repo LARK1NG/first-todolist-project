@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To Do List</title>
+    <script src="https://kit.fontawesome.com/98f8ca3915.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id = "todolist">   <!--전체적인 id-->
+        <div class = "main_title">  <!--대제목-->
+            <h1>To DO List</h1>
+        </div>
+
+        <div class = "input__section"> <!--할 일 적은 것을 받을 인풋 클래스-->
+            <form>
+                <div>
+                    <input type="text" class="item" autofocus="true">
+                </div>
+                <div>
+                    <button type="button" class="input__button"><i class="fas fa-plus-circle"></i></button>
+                </div>
+            </form>
+        </div>
+
+        <div class="item__list"></div> <!--인풋 받은 할 일들을 리스트로 표시해줄 클래스-->
+
+    </div>
+    <script src="main.js" defer></script>
+</body>
+</html>
+
+<!--autofocus = 웹 접속 시 해당 부분으로 포커싱한다-->
