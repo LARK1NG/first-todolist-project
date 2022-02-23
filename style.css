@@ -5,6 +5,7 @@ body {
     font-family: 'Hi Melody', cursive;
     margin-left: 0px;
     margin-right: 0px;
+    caret-color: #02aab0;
 }
 
 #todolist {
@@ -96,4 +97,38 @@ ul li.checked::before {
     transform: rotate(45deg);
     height: 15px;
     width: 7px;
+}
+
+@media screen and (max-width: 768px) {
+    body {
+        margin: 0;
+    }
+
+    #todolist {
+        max-width: 100%;
+    }
+
+    .input__section form {
+        display: inline-flex;
+        align-items: center;
+    }
+
+    .item {
+        width: 200px;
+        height: 30px;
+        border-radius: 15px;
+        border: 1px solid #fbe7c6;
+        padding: 0px 30px;
+    }
+
+    .close {
+        position: absolute;
+        right: 20px;
+        top: 0px;
+        align-items: center;
+        text-align: center;
+        margin: 8px 15px;
+        padding: 4px 8px;
+        border: none;
+    }
 }
