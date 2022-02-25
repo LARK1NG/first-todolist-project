@@ -1,4 +1,4 @@
-'use strict';   // strict 모드 사용
+'use strict';   // strict(JavaScript의 함정을 발견하여 오류로 통지해주는 구조) 모드 사용
 
 let itemList = [];                                          // itemList라는 배열 선언
 let inputbutton = document.querySelector(".input__button"); // input__button 클래스 불러오기
@@ -28,7 +28,6 @@ function addItem() {                                        // addItem이라는 
     document.querySelector(".item").focus();        // 제거 후 item 클래스에 포커싱
     showList();                                     // showList() 실행
 }
-
 
 /*  function = 함수를 선언
     value = 값
